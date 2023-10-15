@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add car</title>
+    <meta charset="iSO-iso-8859-1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Inter&family=Luxurious+Roman&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@500&family=Oswald:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style media="screen">
+      body{
+        background-color: #f0f4f7;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .first{
+        height: 20px;
+        background-color:	#2F4F4F;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        padding: 0px 0px 35px 0px;
+        position: relative;
+      }
+      .myh4{
+        color: #f0f4f7;
+        margin-left: 15px;
+        margin-right: 800px;
+        margin-top: 10px;
+        display: inline-block;
+        font-family: 'Hind Siliguri', sans-serif;
+      }
+
+      .sbmt1{
+        height: 55.3px;
+        width: 12%;
+        margin-top: 0px;
+        background-color:#2F4F4F;
+        margin-left: 12px;
+        margin-right: 12px;
+        border: none;
+        font-size: 1.1rem;
+        color:#f0f4f7;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .sbmt1:hover{
+          background-color:#f0f4f7;
+          color: #2F4F4F;
+          transition: 0.2s;
+      }
+
+      .inputl{
+        margin-top: 70px;
+        margin-left: 140px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        height: 50px;
+        width: 20%;
+        border-top: solid 1.6px #36454F;
+        border-left: solid 1.6px #36454F;
+        border-bottom: solid 1.6px #36454F;
+        border-right: solid 1.6px #36454F;
+        background-color:	#DCDCDC;
+      }
+
+      .inputr{
+        margin-top: 70px;
+        margin-left: 650px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        height: 50px;
+        width: 20%;
+        border-top: solid 1.6px #36454F;
+        border-left: solid 1.6px #36454F;
+        border-bottom: solid 1.6px #36454F;
+        border-right: solid 1.6px #36454F;
+        background-color:	#DCDCDC;
+
+
+      }
+      ::placeholder{
+      text-align: center;
+      font-size: 1.28rem;
+      color:#2F4F4F;
+      font-family: 'Merriweather', serif;
+    }
+
+    .sbmt{
+      width: 10%;
+      margin-top: 60px;
+      margin-left:740px;
+      height: 40px;
+      font-size: 1.2rem;
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 20px;
+      border-top: 2px solid #2F4F4F;
+      border-left: 2px solid #2F4F4F;
+      border-right: 2px solid #2F4F4F;
+      border-bottom: 2px solid #2F4F4F;
+      color:#2F4F4F;
+      cursor: pointer;
+      background-color:#f0f4f7;
+    }
+
+    .sbmt:hover{
+      background-color:#2F4F4F;
+      color: #f0f4f7;
+      transition: 0.2s;
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="first">
+      <h4 class="myh4">Karrntls</h4>
+      <a href="http://localhost/CRS_project/CRS_p/src/main/webapp/rental_details.php"><button type="button" class="sbmt1" name="button">Rental Details</button></a>
+      <a href="http://localhost/CRS_project/CRS_p/src/main/webapp/vehicle_details.php"><button type="button" class="sbmt1" name="button">Vehicle Details</button></a>
+      <a href="http://localhost/CRS_project/CRS_p/src/main/webapp/homepage_index.html"><button type="button" class="sbmt1" name="button">Logout</button></a>
+    </div>
+
+    <form class="" action="http://localhost/CRS_project/CRS_p/src/main/webapp/entry_page.php" method="post">
+      <input class="inputl" type="text" name="vehicleID" placeholder="Vehicle ID" required>
+      <input class="inputl" type="text" name="model" placeholder="Model" required>
+      <input class="inputl" type="text" name="reg" placeholder="Registration No" required>
+      <input class="inputl" type="text" name="nop" placeholder="No. of Passengers" required>
+      <input class="inputl" type="text" name="avail" placeholder="Availability" required>
+      <input class="inputl" type="text" name="gear" placeholder="Gear Type" required>
+      <input class="inputl" type="text" name="ex_chrg" placeholder="Excess Charge" required>
+      <input class="inputl" type="text" name="fueltype" placeholder="Fuel Type" required>
+      <input class="inputl" type="text" name="rph" placeholder="Rate Per Hour" required>
+      <input class="inputr" type="text" name="city" placeholder="Location" required>
+      <input class="sbmt" type="submit" name="submit" value="Add">
+    </form>
+  </body>
+</html>
